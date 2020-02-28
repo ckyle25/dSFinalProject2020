@@ -1,0 +1,9 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label=<DUI_num &le; 0.5<br/>gini = 0.449<br/>samples = 14995<br/>value = [10706, 2787, 1252, 214, 36]<br/>class = Perished>, fillcolor="#eead7f"] ;
+1 [label=<gini = 0.444<br/>samples = 14460<br/>value = [10381, 2671, 1179, 200, 29]<br/>class = Perished>, fillcolor="#eead7e"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label=<gini = 0.564<br/>samples = 535<br/>value = [325, 116, 73, 14, 7]<br/>class = Perished>, fillcolor="#f2c09c"] ;
+0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+}
