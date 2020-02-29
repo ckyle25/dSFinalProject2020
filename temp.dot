@@ -1,9 +1,17 @@
 digraph Tree {
 node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
 edge [fontname=helvetica] ;
-0 [label=<DUI_num &le; 0.5<br/>gini = 0.449<br/>samples = 14995<br/>value = [10706, 2787, 1252, 214, 36]<br/>class = Perished>, fillcolor="#eead7f"] ;
-1 [label=<gini = 0.444<br/>samples = 14460<br/>value = [10381, 2671, 1179, 200, 29]<br/>class = Perished>, fillcolor="#eead7e"] ;
+0 [label=<DISTRACTED_DRIVING_num &le; 0.5<br/>gini = 0.455<br/>samples = 14995<br/>value = [10617, 2860, 1253, 230, 35]<br/>class = 1>, fillcolor="#eeae80"] ;
+1 [label=<DUI_num &le; 0.5<br/>gini = 0.444<br/>samples = 13726<br/>value = [9854, 2511, 1110, 216, 35]<br/>class = 1>, fillcolor="#eead7d"] ;
 0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
-2 [label=<gini = 0.564<br/>samples = 535<br/>value = [325, 116, 73, 14, 7]<br/>class = Perished>, fillcolor="#f2c09c"] ;
-0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+2 [label=<gini = 0.439<br/>samples = 13251<br/>value = [9571, 2422, 1034, 196, 28]<br/>class = 1>, fillcolor="#eeac7c"] ;
+1 -> 2 ;
+3 [label=<gini = 0.582<br/>samples = 475<br/>value = [283, 89, 76, 20, 7]<br/>class = 1>, fillcolor="#f2c09b"] ;
+1 -> 3 ;
+4 [label=<DUI_num &le; 0.5<br/>gini = 0.55<br/>samples = 1269<br/>value = [763, 349, 143, 14, 0]<br/>class = 1>, fillcolor="#f3c6a6"] ;
+0 -> 4 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+5 [label=<gini = 0.55<br/>samples = 1215<br/>value = [730, 337, 135, 13, 0]<br/>class = 1>, fillcolor="#f3c7a6"] ;
+4 -> 5 ;
+6 [label=<gini = 0.555<br/>samples = 54<br/>value = [33, 12, 8, 1, 0]<br/>class = 1>, fillcolor="#f2c09c"] ;
+4 -> 6 ;
 }
